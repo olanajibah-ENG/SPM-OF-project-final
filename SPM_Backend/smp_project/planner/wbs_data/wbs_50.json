@@ -1,0 +1,151 @@
+{
+  "project_name": "E-commerce Platform",
+  "methodology": "Scrum",
+  "phases": [
+    {
+      "id": "1",
+      "name": "Phase 1: Planning and Design",
+      "description": "Define project scope, create wireframes, and design database schema",
+      "tasks": [
+        {
+          "id": "1.1",
+          "name": "Define project scope and create wireframes",
+          "description": "Meet with stakeholders to define project scope and create wireframes for the e-commerce platform",
+          "dependencies": [],
+          "resource": "UX/UI Designer",
+          "a": 2,
+          "m": 4,
+          "b": 6,
+          "effort_days": 4.0
+        },
+        {
+          "id": "1.2",
+          "name": "Design database schema",
+          "description": "Design database schema for the e-commerce platform using Django",
+          "dependencies": [
+            "1.1"
+          ],
+          "resource": "Backend Developer",
+          "a": 3,
+          "m": 5,
+          "b": 8,
+          "effort_days": 5.166666666666667
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Phase 2: Frontend Development",
+      "description": "Develop React and React Native applications",
+      "tasks": [
+        {
+          "id": "2.1",
+          "name": "Develop React application",
+          "description": "Develop React application for the e-commerce platform",
+          "dependencies": [
+            "1.2"
+          ],
+          "resource": "Frontend Developer",
+          "a": 10,
+          "m": 15,
+          "b": 20,
+          "effort_days": 15.0
+        },
+        {
+          "id": "2.2",
+          "name": "Develop React Native application",
+          "description": "Develop React Native application for the e-commerce platform",
+          "dependencies": [
+            "1.2"
+          ],
+          "resource": "Mobile Developer",
+          "a": 12,
+          "m": 18,
+          "b": 24,
+          "effort_days": 18.0
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Phase 3: Backend Development",
+      "description": "Develop Django application and integrate with frontend",
+      "tasks": [
+        {
+          "id": "3.1",
+          "name": "Develop Django application",
+          "description": "Develop Django application for the e-commerce platform",
+          "dependencies": [
+            "1.2"
+          ],
+          "resource": "Backend Developer",
+          "a": 8,
+          "m": 12,
+          "b": 16,
+          "effort_days": 12.0
+        },
+        {
+          "id": "3.2",
+          "name": "Integrate with frontend",
+          "description": "Integrate Django application with React and React Native applications",
+          "dependencies": [
+            "3.1",
+            "2.1",
+            "2.2"
+          ],
+          "resource": "Backend Developer",
+          "a": 5,
+          "m": 8,
+          "b": 12,
+          "effort_days": 8.166666666666666
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Phase 4: Testing and Deployment",
+      "description": "Test and deploy the e-commerce platform",
+      "tasks": [
+        {
+          "id": "4.1",
+          "name": "Unit testing",
+          "description": "Perform unit testing for the e-commerce platform",
+          "dependencies": [
+            "3.2"
+          ],
+          "resource": "Quality Assurance Engineer",
+          "a": 4,
+          "m": 6,
+          "b": 8,
+          "effort_days": 6.0
+        },
+        {
+          "id": "4.2",
+          "name": "Integration testing",
+          "description": "Perform integration testing for the e-commerce platform",
+          "dependencies": [
+            "4.1"
+          ],
+          "resource": "Quality Assurance Engineer",
+          "a": 6,
+          "m": 9,
+          "b": 12,
+          "effort_days": 9.0
+        },
+        {
+          "id": "4.3",
+          "name": "Deployment",
+          "description": "Deploy the e-commerce platform to production",
+          "dependencies": [
+            "4.2"
+          ],
+          "resource": "DevOps Engineer",
+          "a": 3,
+          "m": 5,
+          "b": 8,
+          "effort_days": 5.166666666666667
+        }
+      ]
+    }
+  ]
+}

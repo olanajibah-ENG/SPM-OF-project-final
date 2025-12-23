@@ -1,0 +1,169 @@
+{
+  "project_name": "E-learning Platform",
+  "methodology": "Hybrid",
+  "phases": [
+    {
+      "id": "1",
+      "name": "Requirements Gathering",
+      "description": "Define e-learning platform requirements",
+      "tasks": [
+        {
+          "id": "1.1",
+          "name": "Conduct Stakeholder Interviews",
+          "description": "Interview subject matter experts and stakeholders to gather requirements",
+          "dependencies": [],
+          "resource": "Product Owner",
+          "a": 2,
+          "m": 4,
+          "b": 6,
+          "effort_days": 4.0
+        },
+        {
+          "id": "1.2",
+          "name": "Create User Stories",
+          "description": "Write user stories based on interview findings",
+          "dependencies": [
+            "1.1"
+          ],
+          "resource": "Product Owner",
+          "a": 3,
+          "m": 5,
+          "b": 8,
+          "effort_days": 5.166666666666667
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Design",
+      "description": "Design e-learning platform architecture and user interface",
+      "tasks": [
+        {
+          "id": "2.1",
+          "name": "Design Database Schema",
+          "description": "Design database schema for storing course and user data",
+          "dependencies": [
+            "1.2"
+          ],
+          "resource": "Database Administrator",
+          "a": 4,
+          "m": 6,
+          "b": 10,
+          "effort_days": 6.333333333333333
+        },
+        {
+          "id": "2.2",
+          "name": "Create Wireframes",
+          "description": "Create wireframes for e-learning platform user interface",
+          "dependencies": [
+            "2.1"
+          ],
+          "resource": "UX Designer",
+          "a": 5,
+          "m": 8,
+          "b": 12,
+          "effort_days": 8.166666666666666
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Development",
+      "description": "Develop e-learning platform using Django and React",
+      "tasks": [
+        {
+          "id": "3.1",
+          "name": "Implement Django Backend",
+          "description": "Implement Django backend for course and user management",
+          "dependencies": [
+            "2.2"
+          ],
+          "resource": "Backend Developer",
+          "a": 10,
+          "m": 15,
+          "b": 20,
+          "effort_days": 15.0
+        },
+        {
+          "id": "3.2",
+          "name": "Implement React Frontend",
+          "description": "Implement React frontend for user interface",
+          "dependencies": [
+            "3.1"
+          ],
+          "resource": "Frontend Developer",
+          "a": 12,
+          "m": 18,
+          "b": 24,
+          "effort_days": 18.0
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Testing",
+      "description": "Test e-learning platform for functionality and usability",
+      "tasks": [
+        {
+          "id": "4.1",
+          "name": "Unit Testing",
+          "description": "Write unit tests for Django backend",
+          "dependencies": [
+            "3.1"
+          ],
+          "resource": "Quality Assurance Engineer",
+          "a": 8,
+          "m": 12,
+          "b": 16,
+          "effort_days": 12.0
+        },
+        {
+          "id": "4.2",
+          "name": "Integration Testing",
+          "description": "Write integration tests for React frontend",
+          "dependencies": [
+            "4.1"
+          ],
+          "resource": "Quality Assurance Engineer",
+          "a": 10,
+          "m": 15,
+          "b": 20,
+          "effort_days": 15.0
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Deployment",
+      "description": "Deploy e-learning platform to production",
+      "tasks": [
+        {
+          "id": "5.1",
+          "name": "Configure Production Environment",
+          "description": "Configure production environment for e-learning platform",
+          "dependencies": [
+            "4.2"
+          ],
+          "resource": "DevOps Engineer",
+          "a": 6,
+          "m": 9,
+          "b": 12,
+          "effort_days": 9.0
+        },
+        {
+          "id": "5.2",
+          "name": "Deploy to Production",
+          "description": "Deploy e-learning platform to production",
+          "dependencies": [
+            "5.1"
+          ],
+          "resource": "DevOps Engineer",
+          "a": 8,
+          "m": 12,
+          "b": 16,
+          "effort_days": 12.0
+        }
+      ]
+    }
+  ]
+}

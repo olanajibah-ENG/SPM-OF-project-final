@@ -1,0 +1,208 @@
+{
+  "project_name": "Task Management App",
+  "methodology": "Agile",
+  "phases": [
+    {
+      "id": "1",
+      "name": "Requirements Gathering",
+      "description": "Define project scope, user stories, and acceptance criteria",
+      "tasks": [
+        {
+          "id": "1.1",
+          "name": "Gather User Requirements",
+          "description": "Conduct user interviews, surveys, and workshops to define project scope",
+          "dependencies": [],
+          "resource": "Product Owner",
+          "a": 2,
+          "m": 4,
+          "b": 6,
+          "effort_days": 4.0
+        },
+        {
+          "id": "1.2",
+          "name": "Define User Stories and Acceptance Criteria",
+          "description": "Create user stories, acceptance criteria, and non-functional requirements",
+          "dependencies": [
+            "1.1"
+          ],
+          "resource": "Product Owner",
+          "a": 3,
+          "m": 5,
+          "b": 8,
+          "effort_days": 5.166666666666667
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Design and Prototyping",
+      "description": "Create wireframes, mockups, and prototypes for the mobile app",
+      "tasks": [
+        {
+          "id": "2.1",
+          "name": "Create Wireframes and Mockups",
+          "description": "Design the user interface and user experience for the mobile app",
+          "dependencies": [
+            "1.2"
+          ],
+          "resource": "UX Designer",
+          "a": 4,
+          "m": 6,
+          "b": 10,
+          "effort_days": 6.333333333333333
+        },
+        {
+          "id": "2.2",
+          "name": "Create Prototypes",
+          "description": "Develop interactive prototypes for the mobile app",
+          "dependencies": [
+            "2.1"
+          ],
+          "resource": "UX Designer",
+          "a": 5,
+          "m": 8,
+          "b": 12,
+          "effort_days": 8.166666666666666
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Development",
+      "description": "Implement the mobile app using the chosen technology stack",
+      "tasks": [
+        {
+          "id": "3.1",
+          "name": "Implement User Authentication",
+          "description": "Develop user authentication using the chosen technology stack",
+          "dependencies": [
+            "2.2"
+          ],
+          "resource": "Mobile App Developer",
+          "a": 8,
+          "m": 12,
+          "b": 18,
+          "effort_days": 12.333333333333334
+        },
+        {
+          "id": "3.2",
+          "name": "Implement Push Notifications",
+          "description": "Develop push notifications using the chosen technology stack",
+          "dependencies": [
+            "3.1"
+          ],
+          "resource": "Mobile App Developer",
+          "a": 6,
+          "m": 10,
+          "b": 15,
+          "effort_days": 10.166666666666666
+        },
+        {
+          "id": "3.3",
+          "name": "Implement Cloud Sync",
+          "description": "Develop cloud sync using the chosen technology stack",
+          "dependencies": [
+            "3.2"
+          ],
+          "resource": "Mobile App Developer",
+          "a": 10,
+          "m": 15,
+          "b": 20,
+          "effort_days": 15.0
+        },
+        {
+          "id": "3.4",
+          "name": "Implement Reporting Dashboard",
+          "description": "Develop reporting dashboard using the chosen technology stack",
+          "dependencies": [
+            "3.3"
+          ],
+          "resource": "Mobile App Developer",
+          "a": 12,
+          "m": 18,
+          "b": 24,
+          "effort_days": 18.0
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Testing and Quality Assurance",
+      "description": "Test the mobile app for bugs, performance, and security",
+      "tasks": [
+        {
+          "id": "4.1",
+          "name": "Unit Testing",
+          "description": "Test individual units of code for bugs and performance",
+          "dependencies": [
+            "3.4"
+          ],
+          "resource": "Quality Assurance Engineer",
+          "a": 8,
+          "m": 12,
+          "b": 18,
+          "effort_days": 12.333333333333334
+        },
+        {
+          "id": "4.2",
+          "name": "Integration Testing",
+          "description": "Test the integration of different components for bugs and performance",
+          "dependencies": [
+            "4.1"
+          ],
+          "resource": "Quality Assurance Engineer",
+          "a": 10,
+          "m": 15,
+          "b": 20,
+          "effort_days": 15.0
+        },
+        {
+          "id": "4.3",
+          "name": "UI Testing",
+          "description": "Test the user interface for bugs and performance",
+          "dependencies": [
+            "4.2"
+          ],
+          "resource": "Quality Assurance Engineer",
+          "a": 12,
+          "m": 18,
+          "b": 24,
+          "effort_days": 18.0
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Deployment and Maintenance",
+      "description": "Deploy the mobile app to the app store and maintain it",
+      "tasks": [
+        {
+          "id": "5.1",
+          "name": "Deploy to App Store",
+          "description": "Submit the mobile app to the app store for review and approval",
+          "dependencies": [
+            "4.3"
+          ],
+          "resource": "Mobile App Developer",
+          "a": 4,
+          "m": 6,
+          "b": 10,
+          "effort_days": 6.333333333333333
+        },
+        {
+          "id": "5.2",
+          "name": "Maintain the Mobile App",
+          "description": "Fix bugs, update the app, and perform regular maintenance",
+          "dependencies": [
+            "5.1"
+          ],
+          "resource": "Mobile App Developer",
+          "a": 6,
+          "m": 10,
+          "b": 15,
+          "effort_days": 10.166666666666666
+        }
+      ]
+    }
+  ]
+}
