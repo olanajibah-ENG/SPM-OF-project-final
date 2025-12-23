@@ -1,0 +1,80 @@
+{
+  "app": {
+    "title": "Software Project Manager",
+    "subtitle": "Smart tool for analyzing and managing software projects"
+  },
+  "input": {
+    "placeholder": "Enter your software project description here...",
+    "send": "Send"
+  },
+  "chat": {
+    "placeholder": "Ask a project-management question (or paste a scope) ...",
+    "modeLabel": "Mode",
+    "modes": {
+      "normal": "Normal",
+      "child": "Child",
+      "detailed": "Detailed"
+    }
+  },
+  "buttons": {
+    "chat": "Chat",
+    "wbs": "WBS",
+    "gantt": "Gantt Chart",
+    "risk": "Risk Analysis",
+    "all": "Generate All"
+  },
+  "project": {
+    "info": "Project Info",
+    "name": "Project Name",
+    "methodology": "Methodology"
+  },
+  "tabs": {
+    "wbs": "Work Breakdown",
+    "gantt": "Timeline",
+    "risks": "Risks"
+  },
+  "errors": {
+    "NOT_SOFTWARE_PROJECT": "The description is not related to a software project",
+    "SCOPE_TOO_SHORT": "The description is too short, please provide more details",
+    "TEXT_TOO_GENERIC": "The text is unclear, please specify project requirements more clearly"
+  },
+  "risk": {
+    "table": {
+      "name": "Risk Name",
+      "description": "Description",
+      "probability": "Probability",
+      "impact": "Impact",
+      "mitigation": "Mitigation Plan",
+      "category": "Category"
+    },
+    "matrix": {
+      "title": "Risk Matrix",
+      "probability": "Probability",
+      "impact": "Impact"
+    },
+    "levels": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Medium",
+      "4": "High",
+      "5": "Very High"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "noData": "No data available",
+    "theme": {
+      "light": "Light",
+      "dark": "Dark"
+    }
+  },
+  "chat": {
+    "placeholder": "Ask any software engineering question...",
+    "modeLabel": "Mode",
+    "modes": {
+      "child": "Child",
+      "normal": "Normal",
+      "details": "Details"
+    }
+  }
+}
